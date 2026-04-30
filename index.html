@@ -1,57 +1,197 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <title>BioTech Lab</title>
-
-  <!-- 폰트 -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
-
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeneLab Archive</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
 </head>
-
 <body>
 
-<header class="nav">
-  <div class="logo">🧬 BioTech</div>
-  <nav>
-    <a href="#">Home</a>
-    <a href="#">Research</a>
-    <a href="#">Gallery</a>
-  </nav>
-</header>
+  <!-- NAV -->
+  <header class="navbar">
+    <div class="logo">GeneLab Archive</div>
 
-<section class="hero">
-  <div class="overlay"></div>
-  <div class="hero-content">
-    <h1>Bio Engineering</h1>
-    <p>Where Biology Meets Technology</p>
-  </div>
-</section>
+    <nav class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#topics">Topics</a>
+      <a href="#articles">Articles</a>
+      <a href="#library">Library</a>
+      <a href="#gallery">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-<section class="section">
-  <h2 class="section-title">Featured Research</h2>
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <p class="hero-tag">Genetics · Molecular Biology · Bioengineering</p>
 
-  <div class="cards">
+    <h1>
+      Genetics & Bio Archive<br />
+      for Research Notes
+    </h1>
 
-    <div class="card">
-      <h3>CRISPR</h3>
-      <p>유전자 편집의 혁신 기술</p>
+    <p class="hero-sub">
+      유전자와 바이오엔지니어링 관련 기사, 연구 요약, 실험 노트, 개념 정리를 기록하는 개인 아카이브입니다.
+      <br />
+      (여기 소개 문장은 나중에 원하는 스타일로 수정 가능)
+    </p>
+
+    <div class="button-group">
+      <a href="#articles" class="btn btn-primary">Explore Articles</a>
+      <a href="#library" class="btn btn-outline">Open Library</a>
+      <a href="#gallery" class="btn btn-outline">View Gallery</a>
+    </div>
+  </section>
+
+  <!-- TOPICS -->
+  <section class="section" id="topics">
+    <div class="section-head">
+      <h2>Explore Topics</h2>
+      <p>버튼을 눌러 관련 섹션을 탐색하거나 나중에 페이지로 연결할 수 있습니다.</p>
     </div>
 
-    <div class="card">
-      <h3>AI + Biology</h3>
-      <p>인공지능 기반 생명과학 연구</p>
+    <div class="topic-buttons">
+      <a class="topic" href="#articles">CRISPR / Genome Editing</a>
+      <a class="topic" href="#articles">Gene Therapy</a>
+      <a class="topic" href="#library">PCR / Cloning</a>
+      <a class="topic" href="#library">Epigenetics</a>
+      <a class="topic" href="#library">RNA Biology</a>
+      <a class="topic" href="#articles">Cancer Genetics</a>
+      <a class="topic" href="#library">Bioinformatics</a>
+      <a class="topic" href="#gallery">Lab Images</a>
+    </div>
+  </section>
+
+  <!-- ARTICLES -->
+  <section class="section" id="articles">
+    <div class="section-head">
+      <h2>Articles</h2>
+      <p>
+        최신 연구 기사, 논문 요약, 트렌드 정리를 올리는 공간입니다.
+        <br />
+        (카드 내용은 너가 채우면 됨)
+      </p>
     </div>
 
-    <div class="card">
-      <h3>Bio Materials</h3>
-      <p>차세대 생체 소재</p>
+    <div class="grid">
+      <div class="card">
+        <h3>Article Title 01</h3>
+        <p>요약 내용을 여기에 작성하세요.</p>
+        <span class="meta">Tag / Category</span>
+      </div>
+
+      <div class="card">
+        <h3>Article Title 02</h3>
+        <p>요약 내용을 여기에 작성하세요.</p>
+        <span class="meta">Tag / Category</span>
+      </div>
+
+      <div class="card">
+        <h3>Article Title 03</h3>
+        <p>요약 내용을 여기에 작성하세요.</p>
+        <span class="meta">Tag / Category</span>
+      </div>
     </div>
 
-  </div>
-</section>
+    <div class="button-group">
+      <a href="pages/articles.html" class="btn btn-primary">Open Articles Page</a>
+    </div>
+  </section>
 
-<script src="script.js"></script>
+  <!-- LIBRARY -->
+  <section class="section" id="library">
+    <div class="section-head">
+      <h2>Library</h2>
+      <p>
+        개념 정리 / 실험 프로토콜 / 용어 정리를 올리는 공간입니다.
+        <br />
+        (여기도 카드 내용은 나중에 수정 가능)
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card small-card">
+        <h3>Library Note 01</h3>
+        <p>여기에 개념 요약을 작성하세요.</p>
+        <span class="meta">Concept</span>
+      </div>
+
+      <div class="card small-card">
+        <h3>Library Note 02</h3>
+        <p>여기에 개념 요약을 작성하세요.</p>
+        <span class="meta">Protocol</span>
+      </div>
+
+      <div class="card small-card">
+        <h3>Library Note 03</h3>
+        <p>여기에 개념 요약을 작성하세요.</p>
+        <span class="meta">Bioinformatics</span>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <a href="pages/library.html" class="btn btn-primary">Open Library Page</a>
+    </div>
+  </section>
+
+  <!-- GALLERY -->
+  <section class="section" id="gallery">
+    <div class="section-head">
+      <h2>Gallery</h2>
+      <p>
+        실험 이미지, 구조도, 데이터 시각화 자료를 업로드하는 공간입니다.
+        <br />
+        (이미지 파일은 assets/images에 넣고 경로만 수정하면 됨)
+      </p>
+    </div>
+
+    <div class="grid">
+      <div class="card">
+        <img src="assets/images/gallery1.jpg" alt="gallery">
+        <h3>Image Title 01</h3>
+        <p>이미지 설명을 여기에 작성하세요.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/gallery2.jpg" alt="gallery">
+        <h3>Image Title 02</h3>
+        <p>이미지 설명을 여기에 작성하세요.</p>
+      </div>
+
+      <div class="card">
+        <img src="assets/images/gallery3.jpg" alt="gallery">
+        <h3>Image Title 03</h3>
+        <p>이미지 설명을 여기에 작성하세요.</p>
+      </div>
+    </div>
+
+    <div class="button-group">
+      <a href="pages/gallery.html" class="btn btn-primary">Open Gallery Page</a>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section" id="contact">
+    <div class="contact-box">
+      <h2>Contact</h2>
+      <p>
+        협업, 정보 공유, 질문이 있다면 연락해주세요.
+        <br />
+        (메일 주소는 너가 수정)
+      </p>
+
+      <div class="button-group">
+        <a href="mailto:yourmail@gmail.com" class="btn btn-primary">Email Me</a>
+        <a href="#home" class="btn btn-outline">Back to Top</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>© 2026 GeneLab Archive · Built with GitHub Pages</p>
+  </footer>
+
 </body>
 </html>
