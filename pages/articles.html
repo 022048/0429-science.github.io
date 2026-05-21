@@ -1,48 +1,51 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Articles - GeneLab Archive</title>
-    <link rel="stylesheet" href="../style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Articles - GeneLab Archive</title>
+  <link rel="stylesheet" href="../style.css">
 </head>
-<body>
+<body style="background: linear-gradient(135px, #e0f2fe, #fce7f3, #e0e7ff, #f3e8ff); min-height: 100vh; margin: 0;">
 
-    <header>
-        <nav>
-            <a href="../index.html">Home</a>
-            <a href="articles.html" class="active">Articles</a>
-            <a href="library.html">Library</a>
-            <a href="gallery.html">Gallery</a>
-        </nav>
-    </header>
+  <header class="navbar">
+    <div class="logo">GeneLab Archive</div>
+    <nav class="nav-links">
+      <a href="../index.html">Home</a>
+      <a href="../index.html#topics">Topics</a>
+      <a href="articles.html" class="active">Articles</a>
+      <a href="library.html">Library</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="../index.html#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="articles" style="padding-top: 100px; min-height: 80vh;">
-        <h2>Articles</h2>
-        <p class="section-desc">최신 연구 기사, 논문 요약, 트렌드 정리</p>
-        
-        <div class="article-grid">
-            <div class="article-card">
-                <h3>Article Title 01</h3>
-                <p>요약 내용을 여기에 작성하세요.</p>
-                <span class="tag">Tag / Category</span>
-            </div>
-            <div class="article-card">
-                <h3>Article Title 02</h3>
-                <p>요약 내용을 여기에 작성하세요.</p>
-                <span class="tag">Tag / Category</span>
-            </div>
-            <div class="article-card">
-                <h3>Article Title 03</h3>
-                <p>요약 내용을 여기에 작성하세요.</p>
-                <span class="tag">Tag / Category</span>
-            </div>
-        </div>
-    </section>
+  <section class="section" id="articles" style="max-width: 800px; margin: 0 auto; padding: 140px 20px 60px 20px; box-sizing: border-box;">
+    <h2 style="font-size: 32px; margin-bottom: 10px; color: #111;">Articles</h2>
+    <p style="color: #666; margin-bottom: 40px;">최신 연구 기사, 논문 요약, 트렌드 정리</p>
+    
+    <div class="article-item" style="background: rgba(255, 255, 255, 0.6); padding: 25px; border-radius: 12px; margin-bottom: 20px; backdrop-filter: blur(5px);">
+      <h3 style="margin-top: 0; font-size: 20px; color: #222;">Article Title 01</h3>
+      <p style="color: #444; line-height: 1.6;">요약 내용을 여기에 작성하세요.</p>
+      <span style="display: inline-block; background: #e0e7ff; color: #4338ca; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 500;">Tag / Category</span>
+    </div>
 
-    <footer>
-        <p>© 2026 GeneLab Archive · Built with GitHub Pages</p>
-    </footer>
+    <div class="article-item" style="background: rgba(255, 255, 255, 0.6); padding: 25px; border-radius: 12px; margin-bottom: 20px; backdrop-filter: blur(5px);">
+      <h3 style="margin-top: 0; font-size: 20px; color: #222;">Article Title 02</h3>
+      <p style="color: #444; line-height: 1.6;">요약 내용을 여기에 작성하세요.</p>
+      <span style="display: inline-block; background: #e0e7ff; color: #4338ca; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 500;">Tag / Category</span>
+    </div>
+
+    <div class="article-item" style="background: rgba(255, 255, 255, 0.6); padding: 25px; border-radius: 12px; margin-bottom: 20px; backdrop-filter: blur(5px);">
+      <h3 style="margin-top: 0; font-size: 20px; color: #222;">Article Title 03</h3>
+      <p style="color: #444; line-height: 1.6;">요약 내용을 여기에 작성하세요.</p>
+      <span style="display: inline-block; background: #e0e7ff; color: #4338ca; padding: 4px 10px; border-radius: 20px; font-size: 12px; font-weight: 500;">Tag / Category</span>
+    </div>
+  </section>
+
+  <footer style="text-align: center; padding: 40px 20px; color: #666; font-size: 14px;">
+    <p>© 2026 GeneLab Archive · Built with GitHub Pages</p>
+  </footer>
 
 </body>
 </html>
