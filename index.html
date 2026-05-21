@@ -1,80 +1,98 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>GeneLab Archive</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>GeneLab Archive</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <header>
-        <nav>
-            <a href="index.html" class="active">Home</a>
-            <a href="#topics">Topics</a>
-            <a href="pages/articles.html">Articles</a>
-            <a href="pages/library.html">Library</a>
-            <a href="pages/gallery.html">Gallery</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </header>
+  <header class="navbar">
+    <div class="logo">GeneLab Archive</div>
+    <nav class="nav-links">
+      <a href="index.html" class="active">Home</a>
+      <a href="#topics">Topics</a>
+      <a href="pages/articles.html">Articles</a>
+      <a href="pages/library.html">Library</a>
+      <a href="pages/gallery.html">Gallery</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-    <section id="home">
-        <div class="hero-content">
-            <p class="subtitle">Genetics · Molecular Biology · Bioengineering</p>
-            <h1>Genetics & Bio Archive</h1>
-            <p class="description">유전자와 바이오엔지니어링 관련 기사, 활동, 실험 노트, 개념 정리를 기록하는 지식탐험형 아카이브</p>
-            <div class="hero-buttons">
-                <a href="pages/articles.html" class="btn">Explore Articles</a>
-                <a href="pages/library.html" class="btn">Open Library</a>
-                <a href="pages/gallery.html" class="btn">View Gallery</a>
-            </div>
-        </div>
-    </section>
+  <section class="hero" id="home">
+    <p class="hero-tag">Genetics · Molecular Biology · Bioengineering</p>
+    <h1>
+      Genetics & Bio Archive<br />
+    </h1>
+    <p class="hero-sub">
+      유전자와 바이오엔지니어링 관련 기사, 활동, 실험 노트, 개념 정리를 기록하는 지식탐험형 아카이브
+      <br />
+    </p>
+    <div class="button-group">
+      <a href="pages/articles.html" class="btn btn-primary">Explore Articles</a>
+      <a href="pages/library.html" class="btn btn-outline">Open Library</a>
+      <a href="pages/gallery.html" class="btn btn-outline">View Gallery</a>
+    </div>
+  </section>
 
-    <section id="motive">
-        <div class="news-ticker">
-            <span class="news-label">MOTIVE SCIENCE</span>
-            <div class="news-track">
-                <a class="news-item" href="https://www.nih.gov/news-events/news-releases" target="_blank">NIH: Latest biomedical research releases</a>
-                <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed: New publications in genetics & molecular biology</a>
-                <a href="https://www.who.int/news" target="_blank">WHO: Global health and science updates</a>
-                <a href="https://www.fda.gov/news-events/fda-newsroom/press-announcements" target="_blank">FDA: Drug approvals & gene therapy announcements</a>
-                <a class="news-item" href="https://www.nih.gov/news-events/news-releases" target="_blank">NIH: Latest biomedical research releases</a>
-                <a href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">PubMed: New publications in genetics & molecular biology</a>
-                <a href="https://www.who.int/news" target="_blank">WHO: Global health and science updates</a>
-                <a href="https://www.fda.gov/news-events/fda-newsroom/press-announcements" target="_blank">FDA: Drug approvals & gene therapy announcements</a>
-            </div>
-        </div>
-    </section>
+  <div class="news-ticker">
+    <span class="news-label">MOTIVE SCIENCE</span>
+    <div class="news-track">
+      <a class="news-item" href="https://www.nih.gov/news-events/news-releases" target="_blank">
+        NIH: Latest biomedical research releases
+      </a>
+      <a class="news-item" href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">
+        PubMed: New publications in genetics & molecular biology
+      </a>
+      <a class="news-item" href="https://www.who.int/news" target="_blank">
+        WHO: Global health and science updates
+      </a>
+      <a class="news-item" href="https://www.fda.gov/news-events/fda-newsroom/press-announcements" target="_blank">
+        FDA: Drug approvals & gene therapy announcements
+      </a>
+      <a class="news-item" href="https://www.nih.gov/news-events/news-releases" target="_blank">
+        NIH: Latest biomedical research releases
+      </a>
+      <a class="news-item" href="https://pubmed.ncbi.nlm.nih.gov/" target="_blank">
+        PubMed: New publications in genetics & molecular biology
+      </a>
+      <a class="news-item" href="https://www.who.int/news" target="_blank">
+        WHO: Global health and science updates
+      </a>
+      <a class="news-item" href="https://www.fda.gov/news-events/fda-newsroom/press-announcements" target="_blank">
+        FDA: Drug approvals & gene therapy announcements
+      </a>
+    </div>
+  </div>
 
-    <section id="topics">
-        <h2>Explore Topics</h2>
-        <p>버튼을 눌러 관련 섹션을 탐색하거나 나중에 페이지로 연결할 수 있습니다.</p>
-        <div class="topic-container">
-            <a href="pages/articles.html" class="topic-btn">CRISPR / Genome Editing</a>
-            <a href="pages/articles.html" class="topic-btn">Gene Therapy</a>
-            <a href="pages/library.html" class="topic-btn">PCR / Cloning</a>
-            <a href="pages/library.html" class="topic-btn">Epigenetics</a>
-            <a href="pages/library.html" class="topic-btn">RNA Biology</a>
-            <a href="pages/articles.html" class="topic-btn">Cancer Genetics</a>
-            <a href="pages/library.html" class="topic-btn">Bioinformatics</a>
-            <a href="pages/gallery.html" class="topic-btn">Lab Images</a>
-        </div>
-    </section>
+  <section class="section" id="topics">
+    <h2>Explore Topics</h2>
+    <p>버튼을 눌러 관련 섹션을 탐색하거나 나중에 페이지로 연결할 수 있습니다.</p>
+    <div class="topic-container">
+      <a href="pages/articles.html" class="topic-btn">CRISPR / Genome Editing</a>
+      <a href="pages/articles.html" class="topic-btn">Gene Therapy</a>
+      <a href="pages/library.html" class="topic-btn">PCR / Cloning</a>
+      <a href="pages/library.html" class="topic-btn">Epigenetics</a>
+      <a href="pages/library.html" class="topic-btn">RNA Biology</a>
+      <a href="pages/articles.html" class="topic-btn">Cancer Genetics</a>
+      <a href="pages/library.html" class="topic-btn">Bioinformatics</a>
+      <a href="pages/gallery.html" class="topic-btn">Lab Images</a>
+    </div>
+  </section>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>협업, 정보 공유, 질문이 있다면 연락해주세요.</p>
-        <div class="contact-buttons">
-            <a href="mailto:yourmail@gmail.com" class="btn">Email Me</a>
-            <a href="#home" class="btn secondary">Back to Top</a>
-        </div>
-    </section>
+  <section class="section" id="contact">
+    <h2>Contact</h2>
+    <p>협업, 정보 공유, 질문이 있다면 연락해주세요.</p>
+    <div class="contact-buttons" style="margin-top: 20px; display: flex; gap: 15px; justify-content: center;">
+      <a href="mailto:yourmail@gmail.com" class="btn btn-primary">Email Me</a>
+      <a href="#home" class="btn btn-outline">Back to Top</a>
+    </div>
+  </section>
 
-    <footer>
-        <p>© 2026 GeneLab Archive · Built with GitHub Pages</p>
-    </footer>
+  <footer style="text-align: center; padding: 40px 20px; color: #666; font-size: 14px;">
+    <p>© 2026 GeneLab Archive · Built with GitHub Pages</p>
+  </footer>
 
 </body>
 </html>
