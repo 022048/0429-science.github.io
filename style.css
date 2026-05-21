@@ -327,3 +327,37 @@ a {
     margin: 15px 20px;
   }
 }
+
+/* ==========================================================================
+   ✨ 은은하게 일렁이는 전체화면 그라데이션 배경 스타일
+   ========================================================================== */
+
+.hero {
+  min-height: 100vh; /* 첫 화면을 꽉 채워서 다음 콘텐츠를 아래로 밀어냄 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  box-sizing: border-box;
+  
+  /* 은은한 오리지널 파스텔 톤 그라데이션 */
+  background: linear-gradient(135px, #e0f2fe, #fce7f3, #e0e7ff, #f3e8ff);
+  background-size: 400% 400%; /* 애니메이션 공간 확보 */
+  
+  /* 15초 동안 무한히 부드럽게 일렁이는 효과 */
+  animation: waveGradient 15s ease infinite; 
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* 대각선으로 은은하게 색상이 움직이는 효과 */
+@keyframes waveGradient {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
